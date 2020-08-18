@@ -8,6 +8,6 @@ import org.springframework.stereotype.Component;
  * Nacos服务端信息从WEB-INF/config.properties中读取
  */
 @Component
-@EnableNacosConfig(globalProperties = @NacosProperties(serverAddr = "${nacos.server-addr}", username = "${nacos.username=}", password = "${nacos.password}", namespace = "${nacos.config.namespace}"))
+@EnableNacosConfig(globalProperties = @NacosProperties(serverAddr = "${nacos.server-addr}", username = "${nacos.username}", password = "${nacos.password}", namespace = "${nacos.config.namespace}"))
 public class NacosConfiguration {
 }
